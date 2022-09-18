@@ -37,23 +37,33 @@ export default function LandingPage() {
 
   return (
     <ThemeProvider theme={theme} className="d-flex align-item-center justify-content-center" >
-
+        <Box py={8} style={{backgroundImage: 'linear-gradient(to right, #6aeef7, #010336 )'}} color="white">
+          <Grid container justify="center">
+            <Grid item xs={10}>
+                <Box>
+                  <Typography variant="h3"><center><strong>Website for Job Seeker & Recruiters</strong></center></Typography>
+                  <br></br>
+                  <Typography variant="p"><center>In this Job searching website you can Sign up, Login, Post the job Vacancies, Drag & Drop the post as per priority, Boundry Color as per the days left & Apply for any openings </center></Typography>
+                  <br></br>
+                  <br></br>
+                  <Typography variant="h4"><center><strong>Are your Recruiter/Terraformer or Applicant?</strong></center></Typography>                  
+                </Box>
+            </Grid>
+          </Grid>
+        </Box>
 
       <div className="container my-4" >
-        <h1 ><strong> Welcome to FINDIN</strong> </h1>
-        <Grid item className='my-5' >
-          <Button style={{ minWidth: "80vw", minHeight: "20vh" }} className={classes.skillchip} onClick={handleOnTeraformer} bgcolor="green">
+      <ButtonGroup style={{ marginLeft:'10%', marginTop:'4%'}} variant="contained" aria-label="outlined primary button group">
+          <Button style={{ minWidth: "30vw", minHeight: "20vh" }} className={classes.skillchip} onClick={handleOnTeraformer} bgcolor="green">
             <strong>Terraformer</strong>
           </Button>
-        </Grid>
 
 
 
-        <Grid item className='my-5' >
-          <Button style={{ minWidth: "80vw", minHeight: "20vh" }} className={classes.skillchip} onClick={handleOnApplicants}>
+          <Button style={{ minWidth: "30vw", minHeight: "20vh" }} className={classes.skillchip} onClick={handleOnApplicants}>
             <strong>Applicant</strong>
           </Button>
-        </Grid>
+        </ButtonGroup>
 
       </div>
 
