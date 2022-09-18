@@ -45,7 +45,7 @@ export default function UserSignup() {
 
     return (
         <Box className='container' style={{ maxWidth: "50vw" }} >
-            <h1 className='my-4' mt={4}><strong>User Sign Up</strong> </h1>
+            <h1 className='my-4' mt={4}><strong>Job Seeker Sign Up Portal</strong> </h1>
 
             {error && alert(error)}
             <div className="mb-3">

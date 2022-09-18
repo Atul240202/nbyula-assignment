@@ -39,7 +39,7 @@ export default function Login() {
 
     return (
         <div className='container'style={{maxWidth:"50vw"}} >
-            <h1 className='my-4'><strong>User Login</strong></h1>
+            <h1 className='my-4'><strong>Jobseeker Login</strong></h1>
             
              {error && alert(error)}
             <div className="mb-3">
