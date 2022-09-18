@@ -3,9 +3,11 @@ import { Box, Grid, Typography, Button, makeStyles } from '@material-ui/core'
 
 const useStyle = makeStyles((theme) => ({
     wrapper: {
-        border: "1px solid #e8e8e8",
+        border: "15px solid #e8e8e8",
         cursor: "pointer",
         transition: "0.5s",
+        padding: "10px",
+
 
         "&:hover": {
             boxShadow: "0px 5px 25px rgba(0,0,0,0.1)",
@@ -25,7 +27,7 @@ const useStyle = makeStyles((theme) => ({
         margin: theme.spacing(0.5),
         padding: theme.spacing(0.75),
         fontSize: "14.5px",
-        borderRadius: "5px",
+        borderRadius: "30px",
         transition: "3s",
         cursor: "pointer",
         fontWeight: 600,
@@ -40,7 +42,7 @@ export default (props) => {
     const classes = useStyle();
     let endDate = parseInt(props.deadline);
     return (
-        <Box p={4} bgcolor={endDate <= 14 && endDate > 3 ? "yellow" : (endDate > 21 ? "green" : "red")} className={classes.wrapper}>
+        <Box p={4} border={30} bgcolor={endDate <= 14 && endDate > 3 ? "yellow" : (endDate > 21 ? "green" : "red")} className={classes.wrapper}>
             <Grid container alignItems="center" >
                 <Grid item xs>
                     <Typography variant="subtitle1"><h6><strong>{props.title}</strong></h6></Typography>
