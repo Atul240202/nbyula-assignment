@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Live Website Link: [Create React App](https://nbyula-job-listing.netlify.app/).
+Live Website Link: [Nbyula Job Assignment](https://nbyula-job-listing.netlify.app/).
 
 ## Available Scripts
 
