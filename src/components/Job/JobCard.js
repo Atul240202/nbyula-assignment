@@ -42,7 +42,7 @@ export default (props) => {
     const classes = useStyle();
     let endDate = parseInt(props.deadline);
     return (
-        <Box p={4} borderRadius={15} borderRight={endDate <= 14 && endDate > 3 ? "10px solid yellow" : (endDate > 21 ? "10px solid green" : "10px solid red")} borderLeft={endDate <= 14 && endDate > 3 ? "10px solid yellow" : (endDate > 21 ? "10px solid green" : "10px solid red")} className={classes.wrapper}>
+        <Box p={4} borderRadius={15} borderRight={endDate <= 14 && endDate > 3 ? "20px solid yellow" : (endDate >= 21 ? "20px solid green" : "20px solid red")} borderLeft={endDate <= 14 && endDate > 3 ? "20px solid yellow" : (endDate >= 21 ? "20px solid green" : "20px solid red")} className={classes.wrapper}>
             <Grid container alignItems="center" >
                 <Grid item xs>
                     <Typography className={classes.companyName} variant="subtitle1"><h4><strong>{props.companyName}</strong></h4></Typography>
