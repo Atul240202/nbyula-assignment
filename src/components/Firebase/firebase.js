@@ -3,13 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA9lBUIRDaXyNzmF-eKYmxjiK9jCT_AnHc",
-    authDomain: "findin-846ce.firebaseapp.com",
-    projectId: "findin-846ce",
-    storageBucket: "findin-846ce.appspot.com",
-    messagingSenderId: "675107563562",
-    appId: "1:675107563562:web:b0d925d4461d52fe703b53"
-  };
+  apiKey: "AIzaSyDkhM6tUUtlbPasQjgS7TSdXIFT8Nj3u2o",
+  authDomain: "nbyula-jobsearch.firebaseapp.com",
+  projectId: "nbyula-jobsearch",
+  storageBucket: "nbyula-jobsearch.appspot.com",
+  messagingSenderId: "469816907815",
+  appId: "1:469816907815:web:030bd2779c9d2bdbb25602"
+};
 
   const firebase=app.initializeApp(firebaseConfig);
   const firestore=firebase.firestore();
