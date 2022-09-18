@@ -16,13 +16,20 @@ const useStyle = makeStyles((theme) => ({
 
   button: {
     fontSize: "20px",
-    backgroundColor: "LightGray",
-    padding: theme.spacing(0.75),
+    // backgroundColor: "LightGray",
+    // padding: theme.spacing(0.75),
     borderRadius: "5px",
-    display: "inline-block",
+    border: "10px solid #e8e8e8",
+    // borderTop: "10px solid #e8e8e8",
+    cursor: "pointer",
+    transition: "0.5s",
+    margin: "20px",
     fontWeight: 600,
-
+    "&:hover": {
+      boxShadow: "0px 5px 25px",
   },
+
+}
 
 
 }));
@@ -79,7 +86,7 @@ const Home = () => {
 
     <ThemeProvider theme={theme}>
       <Header disable={false} openNewJobModal={() => setNewJobModal(true)} />
-      <div ><Button variant="contained" className={classes.button} onClick={handleLogout}>Logout</Button>
+      <div><center><Button display="flex" style={{marginTop: '2%'}} variant="contained" className={classes.button} onClick={handleLogout}>Lets get back to the homepage!!</Button></center>
       </div>
       <NewJobModal closeModal={() => setNewJobModal(false)} newJobModal={newJobModal} postJob={postJob} />
       <ViewJobModal job={viewJob} closeModal={() => setViewJob({})} />
