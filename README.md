@@ -15,6 +15,9 @@ number and contact email
 6. Color of Post boundries changes based upon the days left 
 7. Apply for any posted Job openings
 
+# Technology Used:
+HTML, CSS, JavaScript, ReactJS, Material UI & Firebase
+
 
 ## Components
 1. Firebase('https://github.com/Atul240202/nbyula-assignment/tree/master/src/components'): Here I have stored Firebase Credetials for storing & executing Firebase as Database for Storing the Login Credentials & Job Posting details
